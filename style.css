@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 40px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: black;
+    transition: background 3s ease, color 0.3s ease;
+    
+   
+}
+
+body.show{
+    background-color: #0d1b2b;
+    color: white;
+
+
+}
+
+
+.show .main{
+    background-color: #1b203d;
+}
+
+.show li.list .deleted{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.main{
+    border-radius: 5px;
+    width: 500px;
+    min-height: 150px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    transition: background-color 2s ease-in;
+}
+
+.todos{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.toog{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.input-text{
+    padding: 4px 8px;
+    width: 80%;
+    border-radius: 5px;
+    margin-right: 32px;
+    margin-bottom: 8px;
+}
+
+
+.btn{
+    padding: 2px 15px;
+    border: none;
+    font-size: 13px;
+    background-color: #83C760;
+    border-radius: 5px;
+}
+
+
+
+
+
+li.list {
+    display: flex;
+    align-items: center;       
+    justify-content: space-between; 
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+li.list span:first-child {
+    flex: 1;           
+    margin-right: 20px;  
+}
+
+li.list span:last-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;          
+}
+
+
+li.list .deleted {
+    background-color: rgb(24, 20, 20);
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-left: 10px; 
+    border-radius: 6px;
+    transition: background-color ;
+}
+
+
